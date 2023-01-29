@@ -1,14 +1,11 @@
 // @mui
 import { useTheme, Box } from "@mui/material";
-// hooks
 // components
 import { Outlet } from "react-router-dom";
 import NavBar from "~/components/NavBar";
-import FooterStyle from "~/components/Footer";
 
 export default function Login() {
   const theme = useTheme();
-  //const mdUp = useResponsive("up", "md");
   return (
     <>
       <Box
@@ -32,9 +29,6 @@ export default function Login() {
             pt: `${theme.header.height}`,
             width: "100vw",
             overflowX: "hidden",
-            // [theme.breakpoints.up("lg")]: {
-            //   ml: `${theme.sidebar.width}`,
-            // },
           }}
         >
           <Box
@@ -47,7 +41,6 @@ export default function Login() {
             display="block"
           >
             <Outlet />
-            <FooterStyle />
           </Box>
         </Box>
       </Box>

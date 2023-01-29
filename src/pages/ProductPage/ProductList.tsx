@@ -1,6 +1,6 @@
 // material
 import { Grid } from "@mui/material";
-import ShopProductCard from "~/components/ProductCard";
+import ShopProductCard from "./ShopProductCard";
 import { FC } from "react";
 
 // ----------------------------------------------------------------------

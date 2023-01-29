@@ -1,0 +1,66 @@
+.container {
+  min-height: 400px;
+}
+
+.mr10 {
+  margin-right: 10px !important;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.paragraphe{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 42px;
+  margin-bottom: 0;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.generateBouton{
+  width: 216px;
+  height: 56px;
+  border-radius: 14px;
+}
+
+.spinner{
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+}
+
+.settingRow{
+  display: flex;
+  align-items: center;
+  width: 130px;
+  margin: 5px;
+}
+
+.settingLabel{
+  margin-bottom: 0;
+  margin-left: 6px;
+  color: #000;
+}
+
+.popup{
+  display: flex;
+  flex-direction: column;
+}
+
+.icon{
+  font-size: 16px;
+  color: #000;
+}
+
+.icon:hover{
+  color: #9fa5b1;
+}
