@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import NavBar from "~/components/NavBar";
 
-export default function Login() {
+export default function Layout() {
   return (
     <>
       <Box

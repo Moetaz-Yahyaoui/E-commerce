@@ -1,18 +1,15 @@
-// material
 import { Grid } from "@mui/material";
 import ShopProductCard from "./ShopProductCard";
 import { FC } from "react";
+import { productsArray } from "./ProductArray";
 
 // ----------------------------------------------------------------------
 
-interface ProductProps {
-  products: Array<any>;
-}
-const ProductList: FC<ProductProps> = ({ products }) => {
+const ProductList: FC<any> = () => {
   return (
-    <Grid container spacing={0.5}>
-      {products?.map((product) => (
-        <Grid key={product.sku} item xs={12} sm={4} md={3}>
+    <Grid container spacing={3}>
+      {productsArray?.map((product) => (
+        <Grid key={product.sku} item xs={12} sm={4} md={4}>
           <ShopProductCard product={product} />
         </Grid>
       ))}
