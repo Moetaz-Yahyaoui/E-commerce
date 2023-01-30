@@ -1,21 +1,20 @@
 // @mui
-import { useTheme, Box } from "@mui/material";
+import { Box } from "@mui/material";
 // components
 import { Outlet } from "react-router-dom";
 import NavBar from "~/components/NavBar";
 
 export default function Login() {
-  const theme = useTheme();
   return (
     <>
       <Box
         sx={{
           flex: 1,
           height: "100%",
-          ".MuiPageTitle-wrapper": {
-            background: false ? theme.colors.alpha.trueWhite[5] : "white",
-            marginBottom: `${theme.spacing(4)}`,
-          },
+          background: "url(/static/image/background.png)",
+          minHeight: "100vh",
+          overflow: "hidden",
+          paddingBottom: `30px`,
         }}
       >
         <NavBar />
@@ -26,7 +25,7 @@ export default function Login() {
             zIndex: 5,
             display: "block",
             flex: 1,
-            pt: `${theme.header.height}`,
+            pt: `50px`,
             width: "100vw",
             overflowX: "hidden",
           }}
